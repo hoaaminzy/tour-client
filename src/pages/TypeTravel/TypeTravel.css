@@ -1,0 +1,22 @@
+.typeTour .row {
+  --bs-gutter-x: 0px !important;
+}
+.sticky-sidebar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 30px; /* Adjust this value as needed */
+}
+.typeTravel .ant-form-item {
+  margin-bottom: 0px !important;
+}
+.formfilter
+  .ant-select.ant-select-outlined.ant-select-in-form-item.ant-select-single.ant-select-show-arrow {
+  height: 42px !important;
+}
+.clamped-text-typedetail {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Số lượng dòng tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

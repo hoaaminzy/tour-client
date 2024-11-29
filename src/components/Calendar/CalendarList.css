@@ -1,0 +1,61 @@
+.ant-picker-header {
+  display: none;
+}
+
+.ant-picker-calendar-mode-switch {
+  display: none;
+}
+.ant-picker-calendar-header {
+  display: none !important;
+}
+.calendar-container {
+  display: flex;
+  width: 100%;
+}
+
+.month-list {
+  width: 150px;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.month-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.month-list li {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.month-list li.selected {
+  font-weight: bold;
+  color: #fff;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  background-color: #276ca1;
+}
+
+.calendar-content {
+  padding: 10px;
+}
+
+.selected-month-year {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #276ca1;
+  text-transform: uppercase;
+}
+
+.calendar {
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .month-list {
+    width: 100% !important;
+  }
+}

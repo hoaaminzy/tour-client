@@ -1,0 +1,16 @@
+.tour-combo .row {
+  --bs-gutter-x: 20px !important;
+}
+.sticky-sidebar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 30px; /* Adjust this value as needed */
+}
+.tour-combo .ant-form-item {
+  margin-bottom: 0px !important;
+}
+.tour-combo
+  .formfilter
+  .ant-select.ant-select-outlined.ant-select-in-form-item.ant-select-single.ant-select-show-arrow {
+  height: 42px !important;
+}

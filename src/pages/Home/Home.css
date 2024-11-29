@@ -1,0 +1,189 @@
+.homepage .ant-tabs.ant-tabs-top.css-dev-only-do-not-override-14i19y2,
+.homepage .ant-tabs-nav-wrap,
+.homepage .ant-tabs-nav-list,
+.homepage .ant-tabs-tab {
+  width: 100% !important;
+}
+
+.hover-box:hover .hover-img {
+  border: 1px solid #276ca1;
+}
+
+.hover-box:hover span {
+  color: #276ca1;
+}
+.slick-slide img:focus {
+  outline: none;
+}
+
+/* Nếu hình ảnh nằm trong thẻ a, có thể cần xóa outline của thẻ a */
+.slick-slide a:focus {
+  outline: none;
+}
+
+.btn-all:hover {
+  background-color: #276ca1;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 cột với kích thước bằng nhau */
+  grid-gap: 10px; /* Khoảng cách giữa các khối */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-item.large {
+  grid-column: span 2; /* Chiếm 2 cột */
+  grid-row: span 2; /* Chiếm 2 hàng */
+}
+.gallery-item.largeCol {
+  grid-column: span 2; /* Chiếm 2 cột */
+}
+.ant-tabs-tab-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.ant-tabs-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+  overflow: hidden;
+}
+.imgbg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/icons/bgnen.png");
+  background-size: cover; /* Adjust the background size */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.clamped-text {
+  display: -webkit-box; /* Required for text clamping */
+  -webkit-box-orient: vertical; /* Required for text clamping */
+  -webkit-line-clamp: 1; /* Number of lines to show */
+  overflow: hidden; /* Hides the rest of the content */
+  text-overflow: ellipsis; /* Adds ellipsis (...) at the end */
+}
+
+/* .content-combo-wrapper:hover .combo-img img{
+    transform: rotateX(180deg);
+} */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  perspective: 1000px; /* Điều này tạo ra hiệu ứng 3D khi lật thẻ */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.ant-dropdown .ant-dropdown-menu,
+.ant-dropdown-menu-submenu .ant-dropdown-menu {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+  padding: 10px 0;
+}
+
+.home-form .ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.clamped-text-mobile {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 cột với kích thước bằng nhau */
+    grid-gap: 10px; /* Khoảng cách giữa các khối */
+  }
+
+  .imgbg {
+    background-size: cover; /* Ensure the background covers without overflow */
+    background-position: center top; /* Position the background image at the top */
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .blog-mobile {
+    width: 95% !important;
+  }
+}

@@ -1,0 +1,36 @@
+.info-section {
+    margin-bottom: 20px;
+  }
+  
+  .info-row {
+    display: flex;
+    margin-bottom: 8px;
+    width: 100%; 
+    gap:15px
+  }
+  .info-row span:first-child{
+    width: max-content;
+  }
+  .label {
+    font-weight: bold;
+    width: 150px;
+  }
+  
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .sticky-sidebar-order {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 30px; /* Adjust this value as needed */
+  }
+
+  .clamped-text-bookingtour {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Số lượng dòng tối đa */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

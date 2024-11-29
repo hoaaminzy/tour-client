@@ -1,0 +1,26 @@
+.clamped-text-bookingtour {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Số lượng dòng tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sticky-sidebar-order {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 30px; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+  .tt-mobile{
+    z-index: 999999999;
+    position: absolute;
+  }
+  .title-tt {
+    position: fixed;
+    bottom: 0;
+    background-color: red;
+    left: 0;
+    right: 0;
+  }
+}

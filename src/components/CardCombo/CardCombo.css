@@ -1,0 +1,30 @@
+.clamped-text {
+  display: -webkit-box; /* Required for text clamping */
+  -webkit-box-orient: vertical; /* Required for text clamping */
+  -webkit-line-clamp: 1; /* Number of lines to show */
+  overflow: hidden; /* Hides the rest of the content */
+  text-overflow: ellipsis; /* Adds ellipsis (...) at the end */
+}
+
+
+.card-combo .img-hover:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+}
+
+.clamped-text-combo-tour {
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: normal; 
+}
+.card-combo .hover-detail:hover {
+  height: 93%;
+  justify-content: space-between;
+  transition: all 0.2s ease-in;
+}
+.container-card-combo:hover {
+  box-shadow: 2px 0 5px rgb(110, 107, 107);
+}
